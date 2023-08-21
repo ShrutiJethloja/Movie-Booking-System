@@ -1,0 +1,1 @@
+from .query import update_movie
