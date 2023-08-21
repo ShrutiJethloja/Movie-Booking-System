@@ -1,0 +1,203 @@
+{
+	"info": {
+		"_postman_id": "0b2f0b6b-eee8-4a60-9bf4-d03367724561",
+		"name": "Shipmnts",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26451416",
+		"_collection_link": "https://dark-space-340391.postman.co/workspace/My-Workspace~0ef45c92-f28e-4d27-82ba-6e63ed496c7f/collection/26451416-0b2f0b6b-eee8-4a60-9bf4-d03367724561?action=share&source=collection_link&creator=26451416"
+	},
+	"item": [
+		{
+			"name": "create-user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\" : \"Shruti Jethloja\",\n    \"phone_number\" : \"+919099092987\",\n    \"email\": \"Shruti.jethloja@gmail.com\",\n    \"password\" : \"mypassword\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://tuytikivch.execute-api.ap-south-1.amazonaws.com/test-dev-stage/create-user",
+					"protocol": "https",
+					"host": [
+						"tuytikivch",
+						"execute-api",
+						"ap-south-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"test-dev-stage",
+						"create-user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create-genre",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"genre_type\" : \"horror\",\n    \"customer_id\" : \"2\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://tuytikivch.execute-api.ap-south-1.amazonaws.com/test-dev-stage/create-genre",
+					"protocol": "https",
+					"host": [
+						"tuytikivch",
+						"execute-api",
+						"ap-south-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"test-dev-stage",
+						"create-genre"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create-movies",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"movie_name\" : \"Pari\",\n    \"description\" : \"nice one\",\n    \"customer_id\" : \"2\",\n    \"genre_type\" : \"horror\", \n    \"release_date\" : \"2010-03-12\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://tuytikivch.execute-api.ap-south-1.amazonaws.com/test-dev-stage/create-movies",
+					"protocol": "https",
+					"host": [
+						"tuytikivch",
+						"execute-api",
+						"ap-south-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"test-dev-stage",
+						"create-movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update-movie",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"customer_id\" : \"2\",\n    \"movie_id\" : \"1\",\n    \"description\" : \"old\" \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://tuytikivch.execute-api.ap-south-1.amazonaws.com/test-dev-stage/update-movie",
+					"protocol": "https",
+					"host": [
+						"tuytikivch",
+						"execute-api",
+						"ap-south-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"test-dev-stage",
+						"update-movie"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list-movies",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"movie_name\": \"Pari\",\n  \"release_date\": \"2013-12-02\",\n  \"genre_type\": \"horror\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://tuytikivch.execute-api.ap-south-1.amazonaws.com/test-dev-stage/list-movies",
+					"protocol": "https",
+					"host": [
+						"tuytikivch",
+						"execute-api",
+						"ap-south-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"test-dev-stage",
+						"list-movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add-review",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"customer_id\": \"2\",\n  \"movie_id\": \"1\",\n  \"ratings\": \"3.4\",\n  \"reviews\": \"nice one\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://tuytikivch.execute-api.ap-south-1.amazonaws.com/test-dev-stage/add-review",
+					"protocol": "https",
+					"host": [
+						"tuytikivch",
+						"execute-api",
+						"ap-south-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"test-dev-stage",
+						"add-review"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
