@@ -1,4 +1,4 @@
-# shipment-shruti-submission
+# Movie Booking System
 
 This github link includes postman collection of all the apis and the code.
 I have deployed all my apis on AWS.
